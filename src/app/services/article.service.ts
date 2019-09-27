@@ -2,9 +2,7 @@ import { Injectable } from '@angular/core';
 import { Article } from '../types/article';
 import { ARTICLES } from '../mocks/articles';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class ArticleService {
 
   constructor() { }
@@ -13,7 +11,7 @@ export class ArticleService {
     return ARTICLES;
   }
 
-  public getArticle(id: number): Article {}
+  //public getArticle(id: number): Article {}
 
   public searchArticles(text: string): Article[] {
     const articles: Article[] =  this.getArticles();
