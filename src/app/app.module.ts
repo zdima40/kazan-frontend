@@ -24,7 +24,7 @@ import { ArticleService } from './services/article.service';
     NoopAnimationsModule,
     MatButtonModule
   ],
-  providers: [],
+  providers: [ArticleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
