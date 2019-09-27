@@ -11,13 +11,13 @@ export class ArticlesComponent implements OnInit {
 
   public articles: Article[];
 
-  constructor(private articleService: ArticleService) { }
+  public constructor(private articleService: ArticleService) { }
 
-  ngOnInit() {
+  public ngOnInit() {
     this.getArticles();
   }
 
-  getArticles() {
+  private getArticles() {
     this.articles = this.articleService.getArticles();
     console.log('articles', this.articles);
   }

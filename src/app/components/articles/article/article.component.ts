@@ -10,9 +10,9 @@ export class ArticleComponent implements OnInit {
 
   @Input() article: Article;
 
-  constructor() { }
+  public constructor() { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
 }
