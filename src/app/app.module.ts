@@ -14,13 +14,17 @@ import { ArticleComponent } from './components/articles/article/article.componen
 
 import { ArticleService } from './services/article.service';
 import { HeaderComponent } from './components/header/header.component';
+import { GrantsComponent } from './components/grants/grants.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ArticlesComponent,
     ArticleComponent,
-    HeaderComponent
+    HeaderComponent,
+    GrantsComponent
   ],
   imports: [
     BrowserModule,
