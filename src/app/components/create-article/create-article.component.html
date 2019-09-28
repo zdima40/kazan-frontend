@@ -1,29 +1,14 @@
 
 <form action="handler.php">
 <div class="article-create-form">
-    <mat-form-field>
-      <input type="text" matInput placeholder=title [(ngModel)]="title" name="title" placeholder="name"/>
-    </mat-form-field>
-  
-    <mat-form-field>
-      <textarea [(ngModel)]="body" name="body" matInput placeholder="Textarea"></textarea>
-    </mat-form-field>
-  
-    <mat-form-field>
-      <mat-select [(ngModel)]="community" name="community" placeholder="Самодеятельность">
-        <mat-option  value="Молодая гвардия">Молодая гвардия</mat-option>
-        <mat-option value="ЛизаАлерт">ЛизаАлерт</mat-option>
-        <mat-option value="Самодеятельность">Самодеятельность</mat-option>
-      </mat-select>
-    </mat-form-field>
-  </div>
-  <button mat-button color="accent">Жмяк</button>
+  <form name="create-article" class="create-article">
+    <p class="form-label">Публикация истории <button type="submit" class="article-send"> Опубликовать </button></p><br>
+    <select name="article-community" class="article-community">
+      <option value="Самодеятельность">Самодеятельность</option>
+      <option value="Волонтеры-медики">Волонтеры-медики</option>
+      <option value="LizaAlert">LizaAlert</option>
+    </select>
+    <input name="article-title" type="text" class="article-title" value="Название истории">
+    <textarea name="article-content" type="text" class="article-content">Просто начните писать...</textarea>
   </form>
-  <div class = preview>
-    <h1>Предпросмотр</h1>
-    <div>
-      {{ title }} 
-    </div><p>Дата: {{ article.date | date: 'dd.MM.yyyy'}}</p></div>
-    <div>{{ body }}<br> Сообщество:{{ community }}
-    
-  </div>
+</div>
