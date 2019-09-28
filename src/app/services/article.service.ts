@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Article } from '../types/article';
+import { Article } from '@classtypes/article';
 import { ARTICLES } from '../mocks/articles';
 
 @Injectable()
