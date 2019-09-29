@@ -19,7 +19,8 @@ export class ArticlesComponent implements OnInit {
   }
 
   private getArticles() {
-    this.articles = this.articleService.getArticles();
-    console.log('articles', this.articles);
+    this.articleService.getArticles().subscribe(
+      articles => this.articles = articles
+    );
   }
 }
