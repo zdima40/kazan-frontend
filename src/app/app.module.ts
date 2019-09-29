@@ -12,8 +12,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
-
-
+import { MatCardModule } from '@angular/material/card';
 
 import { ArticlesComponent } from './components/articles/articles.component';
 import { ArticleComponent } from './components/articles/article/article.component';
@@ -23,8 +22,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { GrantsComponent } from './components/grants/grants.component';
 import { CreateArticleComponent } from './components/create-article/create-article.component';
 import { CreateArticleService } from '@services/create-article.service';
-
-
 
 @NgModule({
   declarations: [
@@ -47,7 +44,8 @@ import { CreateArticleService } from '@services/create-article.service';
     MatSelectModule,
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatCardModule
   ],
   providers: [
     ArticleService,
