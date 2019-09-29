@@ -17,7 +17,6 @@ import { AppComponent } from './app.component';
 import { ArticlesComponent } from './components/articles/articles.component';
 import { ArticleComponent } from './components/articles/article/article.component';
 import { HeaderComponent } from './components/header/header.component';
-import { GrantsComponent } from './components/grants/grants.component';
 import { CreateArticleComponent } from './components/create-article/create-article.component';
 import { PartnersListComponent } from './components/partners-list/partners-list.component';
 
@@ -31,7 +30,6 @@ import { PartnerCardService } from '@services/partner-card.service';
     ArticlesComponent,
     ArticleComponent,
     HeaderComponent,
-    GrantsComponent,
     CreateArticleComponent,
     PartnersListComponent
   ],
