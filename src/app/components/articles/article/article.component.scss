@@ -1,0 +1,57 @@
+.article-card{
+    width: 80%;
+    left: 10%;
+}
+
+.article-card-community-name{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #F17E3A;
+}
+
+.article-card-date{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #838383;
+}
+.article-card-author{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #404040;
+    margin: 0 80px;
+}
+.article-card-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #404040;
+}
+.article-card-content{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #404040;
+    margin-left:20px;
+}
+.article-card-rating{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    color: #58BE2F;
+    margin-left: 80px;
+}
