@@ -22,6 +22,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { GrantsComponent } from './components/grants/grants.component';
 import { CreateArticleComponent } from './components/create-article/create-article.component';
 import { CreateArticleService } from '@services/create-article.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { CreateArticleService } from '@services/create-article.service';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [
     ArticleService,

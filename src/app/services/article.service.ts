@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Article } from '@classtypes/article';
+import { Article } from '@classtypes/Article';
 import { ARTICLES } from '../mocks/articles';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
