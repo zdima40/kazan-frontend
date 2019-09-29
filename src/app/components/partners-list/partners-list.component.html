@@ -1,0 +1,18 @@
+<ul>
+    <li *ngFor="let partnerCard of partnerCards">
+        <mat-card class="product-card">
+            <mat-card-header>
+                <mat-card-title>{{partnerCard.title}}</mat-card-title>
+            </mat-card-header>
+            <img class="product-card-image" mat-card-image [src]="partnerCard.logo" [alt]="partnerCard.title">
+            <mat-card-content class="discount">
+                <div>Описание: {{partnerCard.description}}</div>
+                <div>Скидка {{partnerCard.discount * 100}}%</div>
+                <div>Цена в баллах: {{ partnerCard.priceScore }}</div>
+                </mat-card-content>
+            <mat-card-actions>
+                <button class="get-btn" mat-flat-button color="primary">Приобрести</button>
+            </mat-card-actions>
+        </mat-card>  
+    </li>
+</ul>

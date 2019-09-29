@@ -1,4 +1,4 @@
-import { Article } from '@classtypes/article';
+import { Article } from '@classtypes/Article';
 
 
 export const ARTICLES: Article[] = [
